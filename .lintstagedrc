@@ -1,4 +1,4 @@
 {
-  "./**/*.{ts,tsx,html,json}": "npm run eslint",
+  "./**/*.{ts,tsx}": ["npm run prettier-fix", "npm run eslint"],
   "./**/*.{css,scss}": "npm run stylelint"
 }

@@ -20,18 +20,18 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-     /*aliases*/
-     "baseUrl": "src",
-     "paths": {
-       "@styles/*": ["styles/*"],
-       "@constants/*": ["constants/*"],
-       "@components/*": ["components/*"],
-       "@core/*": ["core/*"],
-       "@layout/*": ["layout/*"],
-       "@screens/*": ["screens/*"],
-       "@api/*": ["api/*"],
-       "@assets/*": ["assets/*"],
-     },
+    /*aliases*/
+    "baseUrl": "src",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@constants/*": ["constants/*"],
+      "@components/*": ["components/*"],
+      "@core/*": ["core/*"],
+      "@layout/*": ["layout/*"],
+      "@screens/*": ["screens/*"],
+      "@api/*": ["api/*"],
+      "@assets/*": ["assets/*"]
+    }
   },
   "include": ["src", ".eslintrc.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]

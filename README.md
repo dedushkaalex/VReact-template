@@ -31,7 +31,7 @@ All files you have to deploy will be located at the `dist` directory.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/dedushkaalex/VReact-template/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/dedushkaalex/VReact-template/issues).
 
 ## ✨ Contributors
 

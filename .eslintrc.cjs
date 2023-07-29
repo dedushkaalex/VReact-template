@@ -31,24 +31,22 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'prettier',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
-    'jsx-quotes': [1, 'prefer-double'],
     'react/react-in-jsx-scope': 0,
-    'react/function-component-definition': 0,
-    'react/button-has-type': 0,
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     '@typescript-eslint/no-shadow': 0,
-    'react/jsx-one-expression-per-line': 0,
-    'import/prefer-default-export':
-      'off',
+    'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     'import/no-absolute-path': 0,
-    'no-console': 0,
+    'no-console': 1,
   },
   settings: {
     'import/resolver': {

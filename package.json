@@ -5,9 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "build": "npx tsc && vite build",
     "preview": "vite preview",
+    "eslint": "npx eslint --ext .ts,.tsx ./",
+    "eslint-fix": "npx eslint --ext .ts,.tsx --fix ./",
+    "stylelint": "npx stylelint \"src/{**/*,*}.css\"",
+    "stylelint-fix": "npx stylelint \"src/{**/*,*}.css\" --fix",
+    "prettier": "npx prettier --check ./",
+    "prettier-fix": "npx prettier --write ./",
     "precommit": "lint-staged"
   },
   "dependencies": {
@@ -36,8 +41,12 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^4.3.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {

@@ -11,9 +11,10 @@
     "eslint-fix": "npx eslint --ext .ts,.tsx --fix ./",
     "stylelint": "npx stylelint \"src/{**/*,*}.css\"",
     "stylelint-fix": "npx stylelint \"src/{**/*,*}.css\" --fix",
-    "prettier": "npx prettier --check ./",
+    "prettier": "npx prettier --check --cache ./",
     "prettier-fix": "npx prettier --write ./",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -48,12 +49,5 @@
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-stylelint": "^4.3.0",
     "vite-tsconfig-paths": "^4.2.0"
-  },
-  "lint-staged": {
-    "*.{js, jsx, ts, tsx}": [
-      "node_modules/.bin/eslint --max-warnings=0",
-      "prettier --write",
-      "git add"
-    ]
   }
 }

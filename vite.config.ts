@@ -1,9 +1,10 @@
+import { URL, fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { fileURLToPath, URL } from 'url';
+
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
